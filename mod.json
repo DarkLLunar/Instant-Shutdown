@@ -1,0 +1,14 @@
+{
+	"geode": "5.8.2",
+	"gd": {
+		"win": "2.2081"
+	},
+	"id": "darkllunar.instant-shutdown",
+	"name": "Instant Shutdown",
+	"version": "v1.0.0",
+	"developer": "DarkLLunar",
+	"description": "A mod that lets you close geometry dash instantly whislt saving your savefile in the background",
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.3"
+	}
+}
