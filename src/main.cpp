@@ -4,6 +4,11 @@
 using namespace geode::prelude;
 
 class $modify(InstantShutdownAppDelegate, AppDelegate) {
+    // make it run very early
+    static void onModify(auto& self) {
+        self.setHookPriorityPre("AppDelegate::trySaveGame", Priority::VeryEarlyPre);
+    }
+
     void trySaveGame(bool force) {
         // hide the window immediately
         ShowWindow(WindowFromDC(wglGetCurrentDC()), 0);
